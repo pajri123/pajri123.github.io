@@ -268,6 +268,15 @@ form.addEventListener("submit", (e) => {
     !subject.classList.contains("error") &&
     !mess.classList.contains("error")
   ) {
-    sendEmail();g
+    sendEmail();
+    g;
   }
+});
+
+document.getElementById("download").addEventListener("click", function () {
+  Swal.fire({
+    title: "SUCCESS!",
+    text: "Download Successfuly!",
+    icon: "success",
+  });
 });
